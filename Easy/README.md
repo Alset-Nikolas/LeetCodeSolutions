@@ -9,4 +9,4 @@
 |7                                 | 26.RemoveDuplicatesFromSortedArray     | Accepted                 | 
 |8                                 | 27. Remove Element                     | Accepted                 | 
 |9                                 | 28. Find the Index of the First Occurrence in a String| doing                 | 
-|10                                | 35. Search Insert Position             | doing                 | 
+|10                                | 35. Search Insert Position             | Accepted                 | 
