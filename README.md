@@ -34,3 +34,5 @@
     └── README.md                                - мы тут
 
 
+
+![Leetcode Stats](https://leetcard.jacoblin.cool/Alset-Nikolas?theme=dark)
