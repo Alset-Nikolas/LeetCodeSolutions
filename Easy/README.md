@@ -1,6 +1,6 @@
-|         Название         | Статус решения|
-| :----------------------: | :-----------: |  
-| 1.TwoSum                 | Accepted      |
-| 9.PalindromeNumber       | Accepted      |
-| 13.RomanToInteger        | Accepted      |
-| 14. Longest Common Prefix|             DO|  
+|         Номер по порядку         |         Название         | Статус решения|
+| :-----------:   | :----------------------: | :-----------: |  
+|1| 1.TwoSum                 | Accepted      |
+|2| 9.PalindromeNumber       | Accepted      |
+|3| 13.RomanToInteger        | Accepted      |
+|4| 14. Longest Common Prefix|             DO|  
