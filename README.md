@@ -34,4 +34,4 @@
     └── README.md                                - мы тут
 
 
- <img src="https://leetcard.jacoblin.cool/Alset-Nikolas?theme=dark" height="100%" width="100%"/>
+ <img align="center" src="https://leetcard.jacoblin.cool/Alset-Nikolas?theme=dark" />
