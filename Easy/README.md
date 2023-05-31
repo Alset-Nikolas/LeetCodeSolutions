@@ -10,4 +10,5 @@
 |8                                 | 27. Remove Element                     | Accepted                 | 
 |9                                 | 28. Find the Index of the First Occurrence in a String| Accepted                 | 
 |10                                | 35. Search Insert Position             | Accepted                 | 
-|11                                | 58.LengthLastWord                      | Accepted                 | 
+|11                                | 58. Length Last Word                   | Accepted                 | 
+|12                                | 66. Plus One                           | Accepted                 | 
