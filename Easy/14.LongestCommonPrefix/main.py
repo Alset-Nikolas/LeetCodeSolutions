@@ -1,43 +1,23 @@
 class Solution(object):
-    numbers = {
-        None: 0,
-        "I":             1,
-        "V":             5,
-        "X":             10,
-        "L":             50,
-        "C":             100,
-        "D":             500,
-        "M":             1000,
-        
-    }
-    def romanToInt(self, s):
+    def longestCommonPrefix(self, strs):
         """
-        :type s: str
-        :rtype: int
+        :type strs: List[str]
+        :rtype: str
         """
-        res = 0
+        if len(strs) == 0:
+            return ""
+        min_len = len(min(strs, key=len))
         i = 0
-        while i < len(s):
-            t = s[i]
-            t_next = s[i+1] if i+1<len(s) else None
-            x_ = self.numbers[t] 
-            if t_next is None:
-                res += x_
-                i += 1    
-                continue
-            x_next =self.numbers[t_next] 
-            if x_ < x_next:
-                res += x_next - x_
-                i += 2
-                continue
-            res += x_
-            i += 1
-            
-        return res
-
+        slovo = strs[0]
+        while i < min_len:
+            if all(x[i] == slovo[i]  for x in strs):
+                i += 1
+            else:
+                break
+        return slovo[:i]
 
 if __name__ == "__main__":
     s = Solution()
-    assert s.romanToInt("III") == 3
-    assert s.romanToInt("LVIII") == 58
-    assert s.romanToInt("MCMXCIV") == 1994
+    assert s.longestCommonPrefix(["flower","flow","flight"]) == "fl"
+    assert s.longestCommonPrefix(["dog","racecar","car"]) == ''
+    assert s.longestCommonPrefix([]) == ''

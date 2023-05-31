@@ -3,4 +3,4 @@
 |1| 1.TwoSum                 | Accepted      |
 |2| 9.PalindromeNumber       | Accepted      |
 |3| 13.RomanToInteger        | Accepted      |
-|4| 14. Longest Common Prefix|             DO|  
+|4| 14. Longest Common Prefix| Accepted|  
