@@ -14,4 +14,5 @@
 |12                                | 66. Plus One                           | Accepted                 | 
 |13                                | 67. Add Binary                         | Accepted                 | 
 |14                                | 69. Sqrt(x)                            | Accepted                 | 
+|15                                | 70. ClimbingStairs                     | Accepted                 | 
 
