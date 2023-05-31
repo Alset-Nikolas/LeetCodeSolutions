@@ -15,4 +15,5 @@
 |13                                | 67. Add Binary                         | Accepted                 | 
 |14                                | 69. Sqrt(x)                            | Accepted                 | 
 |15                                | 70. ClimbingStairs                     | Accepted                 | 
+|16                                | 83. RemoveDuplicatesFromSortedList                     | Accepted                 | 
 
