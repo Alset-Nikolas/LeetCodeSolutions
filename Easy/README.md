@@ -12,5 +12,6 @@
 |10                                | 35. Search Insert Position             | Accepted                 | 
 |11                                | 58. Length Last Word                   | Accepted                 | 
 |12                                | 66. Plus One                           | Accepted                 | 
-|12                                | 67. Add Binary                         | Accepted                 | 
+|13                                | 67. Add Binary                         | Accepted                 | 
+|14                                | 69. Sqrt(x)                            | Accepted                 | 
 
