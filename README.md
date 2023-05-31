@@ -18,7 +18,7 @@
     Все задачи имеют свою сложность.
     </p>
     <p align="center">
-    <img src="./info/img/difficulty.png" height="250" width="250"/>
+    <img src="./info/img/difficulty.png" height="150" width="150"/>
     </p>
     <p>
     По этому принципу они размещены в папках в этом репозитории
