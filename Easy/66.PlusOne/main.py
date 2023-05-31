@@ -1,7 +1,8 @@
 class Solution(object):
-    def lengthOfLastWord(self, s):
+    def plusOne(self, digits):
         """
-        :type s: str
-        :rtype: int
+        :type digits: List[int]
+        :rtype: List[int]
         """
-        return len(s.split()[-1])
+        number = int(''.join(str(x) for x in digits)) + 1
+        return [int(x) for x in str(number)]
