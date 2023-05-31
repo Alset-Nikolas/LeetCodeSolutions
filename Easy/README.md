@@ -7,4 +7,4 @@
 |5                                 | 20. ValidParentheses                   | Accepted                 |  
 |6                                 | 21. Merge Two Sorted Lists             | Accepted                 |   
 |7                                 | 26.RemoveDuplicatesFromSortedArray     | Accepted                 | 
-|8                                 | 27. Remove Element                     | doing                    | 
+|8                                 | 27. Remove Element                     | Accepted                    | 
