@@ -7,4 +7,5 @@
 |5                                 | 20. ValidParentheses                   | Accepted                 |  
 |6                                 | 21. Merge Two Sorted Lists             | Accepted                 |   
 |7                                 | 26.RemoveDuplicatesFromSortedArray     | Accepted                 | 
-|8                                 | 27. Remove Element                     | Accepted                    | 
+|8                                 | 27. Remove Element                     | Accepted                 | 
+|9                                 | 28. Find the Index of the First Occurrence in a String| doing                 | 
