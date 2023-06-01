@@ -17,5 +17,6 @@
 |15                                | 70. ClimbingStairs                     | Accepted                 | 
 |16                                | 83. RemoveDuplicatesFromSortedList     | Accepted                 | 
 |17                                | 88. MergeSortedArray                   | Accepted                 | 
-
+|18                                | 94.BinaryTreeInorderTraversal          | Accepted                 | 
+|19                                | 100. Same Tree                         | Accepted                 | 
 
