@@ -23,4 +23,5 @@
 |               21               |                  104. Maximum Depth of Binary Tree      |          Accepted          |
 |               22               |     108. Convert Sorted Array to Binary Search Tree     |          Accepted          |
 |               23               |                110. Balanced Binary Tree                |          Accepted          |
+|               24               |        111. Minimum Depth of Binary Tree                |          Accepted          |
 
