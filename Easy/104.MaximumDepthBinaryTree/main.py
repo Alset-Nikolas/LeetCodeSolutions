@@ -6,7 +6,7 @@
 #         self.right = right
 class Solution(object):
     def maxDepth(self, root):
-        """
+        """104. Maximum Depth of Binary Tree
         :type root: TreeNode
         :rtype: int
         """
