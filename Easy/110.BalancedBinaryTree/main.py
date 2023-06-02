@@ -23,4 +23,4 @@ class Solution(object):
             return max(1, max(l, r))
         if not root:
             return True
-        return abs(get_h_node(root.left) - get_h_node(root.right)) <= 1
+        return abs(get_h_node(root.left) - get_h_node(root.right)) <= 1 and self.isBalanced(root.left) and self.isBalanced(root.right) 

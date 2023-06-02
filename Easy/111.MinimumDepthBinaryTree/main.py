@@ -1,3 +1,4 @@
+import math
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, val=0, left=None, right=None):
@@ -5,22 +6,20 @@
 #         self.left = left
 #         self.right = right
 class Solution(object):
-    def isBalanced(self, root):
+    def minDepth(self, root):
         """
         :type root: TreeNode
-        :rtype: bool
+        :rtype: int
         """
-        def get_h_node(node):
-            if not node:
-                return 0
+        def get_minh(root, h=0):
+            if not root:
+                return h
+            if not root.left and not root.right:
+                return h + 1
+            if root.left and root.right:
+                return min(get_minh(root.left, h+1), get_minh(root.right, h+1))
+            if root.left:
+                return get_minh(root.left, h+1)
+            return get_minh(root.right, h+1)
+        return get_minh(root)
             
-            l = 0
-            r = 0
-            if node.left:
-                l = get_h_node(node.left) + 1
-            if node.right:
-                r = get_h_node(node.right) + 1
-            return max(1, max(l, r))
-        if not root:
-            return True
-        return abs(get_h_node(root.left) - get_h_node(root.right)) <= 1
