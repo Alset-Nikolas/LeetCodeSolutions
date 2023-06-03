@@ -25,4 +25,7 @@
 |               23               |                110. Balanced Binary Tree                |          Accepted          |
 |               24               |        111. Minimum Depth of Binary Tree                |          Accepted          |
 |               25               |        112. Path Sum                                    |          Accepted          |
+|               26               |        118.PascalTriangle                               |          Accepted          |
+|               27               |        119.PascalTriangleII                             |          Accepted          |
+|               28               |        121.BestTimeBuySellStock                         |          Accepted          |
 
