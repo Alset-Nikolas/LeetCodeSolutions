@@ -28,4 +28,5 @@
 |               26               |        118.PascalTriangle                               |          Accepted          |
 |               27               |        119.PascalTriangleII                             |          Accepted          |
 |               28               |        121.BestTimeBuySellStock                         |          Accepted          |
-
+|               29               |        125.ValidPalindrome                              |          Accepted          |
+ 
