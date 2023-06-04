@@ -11,3 +11,4 @@ class Solution(object):
             else:
                 num_set.add(x)
         return num_set.pop()
+    
