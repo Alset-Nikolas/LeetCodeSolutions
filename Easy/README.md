@@ -30,7 +30,8 @@
 |               28               |        121.BestTimeBuySellStock                         |          Accepted          |
 |               29               |        125.ValidPalindrome                              |          Accepted          |
 |               30               |          136. Single Number                             |          Accepted          |
-|               30               |          141.LinkedListCycle                            |          Accepted          |
-|               30               |         144.BinaryTreePreorderTraversal                 |          Accepted          |
+|               31               |          141.LinkedListCycle                            |          Accepted          |
+|               32               |         144.BinaryTreePreorderTraversal                 |          Accepted          |
+|               33               |         145.BinaryTreePostorderTraversal                |          Accepted          |
 
 

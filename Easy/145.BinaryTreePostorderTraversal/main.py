@@ -5,24 +5,17 @@
 #         self.left = left
 #         self.right = right
 class Solution(object):
-    def preorderTraversal(self, root):
+    def postorderTraversal(self, root):
         """
         :type root: TreeNode
         :rtype: List[int]
         """
         res = []
-        if not root:
-            return res
-        nodes = [root]
-        while nodes:
-
-            node = nodes.pop()
+        def dfs(node):
+            if not node:
+                return
+            dfs(node.left)
+            dfs(node.right)
             res.append(node.val)
-            if node.right:
-                nodes.append(node.right)
-            if node.left:
-                nodes.append(node.left)
+        dfs(root)
         return res
-            
-            
-
