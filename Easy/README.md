@@ -33,5 +33,7 @@
 |               31               |          141.LinkedListCycle                            |          Accepted          |
 |               32               |         144.BinaryTreePreorderTraversal                 |          Accepted          |
 |               33               |         145.BinaryTreePostorderTraversal                |          Accepted          |
+|               34               |         160.IntersectionTwoLinkedLists                  |          Accepted          |
+|               35               |         168. Excel Sheet Column Title                   |          Accepted          |
 
 
