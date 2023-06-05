@@ -3,7 +3,6 @@ class Solution:
     # @return an integer
     def reverseBits(self, n: int) -> int:
         n_str = bin(n)[2:]
-        print(n_str, len(n_str))
 
         return int('0b' + n_str[::-1]+'0'*(32-len(n_str)), 2)
 
