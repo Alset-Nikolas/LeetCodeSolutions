@@ -11,10 +11,13 @@ class Solution:
         while node:
             if node.val != val and new_head is None:
                 new_head = node
-            if node.next and node.next.val == val:
-                node.next = node.next.next
+            if new_head:
+                while node.next and node.next.val == val:
+                    node.next = node.next.next
+                
 
             node = node.next
+        return new_head
 
         
 

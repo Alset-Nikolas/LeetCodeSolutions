@@ -35,5 +35,11 @@
 |               33               |         145.BinaryTreePostorderTraversal                |          Accepted          |
 |               34               |         160.IntersectionTwoLinkedLists                  |          Accepted          |
 |               35               |         168. Excel Sheet Column Title                   |          Accepted          |
+|               36               |         169.MajorityElement                             |          Accepted          |
+|               37               |         171.ExcelSheetColumnNumber                      |          Accepted          |
+|               38               |         190.ReverseBits                                 |          Accepted          |
+|               39               |         191.Number1Bits                                 |          Accepted          |
+|               40               |         203.RemoveLinkedListElements                    |          Accepted          |
+
 
 
