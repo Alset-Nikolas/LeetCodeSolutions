@@ -37,7 +37,7 @@
 <h2>Моя статистика:<span>😈</span></h2>
 
 <div align="center">
- <img  src="https://leetcard.jacoblin.cool/Alset-Nikolas?theme=dark" />
+ <img  src="https://leetcard.jacoblin.cool/Alset-Nikolas?ext=heatmap&theme=dark" />
 </div>
 
 
