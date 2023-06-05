@@ -8,7 +8,7 @@
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32" width="32"/></h1>
 
 <h2>Для чего этот репозиторий:</h2>
-<p>Тут я буду размещать свои решения ✊✊✊ </p>
+<p>Тут я буду размещать свои решения ✊ </p>
 
 <h2>Структура репозитория: </h2> 
 <div>
