@@ -16,4 +16,4 @@ class Solution:
             node.next = last_node
             last_node = node
             node = next_node
-        
+        return new_head
