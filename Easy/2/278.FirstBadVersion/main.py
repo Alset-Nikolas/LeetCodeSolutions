@@ -7,4 +7,8 @@ class Solution:
         r = 2**31 - 1
         while l < r:
             m = (l+r)//2
-            if isBadVersion()
+            if isBadVersion(m):
+                r = m - 1
+            else:
+                l = m
+        return l

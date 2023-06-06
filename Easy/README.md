@@ -1,45 +1,16 @@
-| Номер по порядку               |                    Название                    | Статус решения |
-| :----------------------------: | :----------------------------------------------------: | :-------------------------: |
-|               1                |                       1. TwoSum                         |          Accepted          |
-|               2                |                  9. PalindromeNumber                    |          Accepted          |
-|               3                |                   13. RomanToInteger                    |          Accepted          |
-|               4                |               14. Longest Common Prefix                 |          Accepted          |
-|               5                |                  20. ValidParentheses                   |          Accepted          |
-|               6                |               21. Merge Two Sorted Lists                |          Accepted          |
-|               7                |           26.RemoveDuplicatesFromSortedArray            |          Accepted          |
-|               8                |                   27. Remove Element                    |          Accepted          |
-|               9                | 28. Find the Index of the First Occurrence in a String  |          Accepted          |
-|               10               |               35. Search Insert Position                |          Accepted          |
-|               11               |                  58. Length Last Word                   |          Accepted          |
-|               12               |                      66. Plus One                       |          Accepted          |
-|               13               |                     67. Add Binary                      |          Accepted          |
-|               14               |                      69. Sqrt(x)                        |          Accepted          |
-|               15               |                   70. ClimbingStairs                    |          Accepted          |
-|               16               |           83. RemoveDuplicatesFromSortedList            |          Accepted          |
-|               17               |                  88. MergeSortedArray                   |          Accepted          |
-|               18               |             94.BinaryTreeInorderTraversal               |          Accepted          |
-|               19               |                     100. Same Tree                      |          Accepted          |
-|               20               |                  101. Symmetric Tree                    |          Accepted          |
-|               21               |                  104. Maximum Depth of Binary Tree      |          Accepted          |
-|               22               |     108. Convert Sorted Array to Binary Search Tree     |          Accepted          |
-|               23               |                110. Balanced Binary Tree                |          Accepted          |
-|               24               |        111. Minimum Depth of Binary Tree                |          Accepted          |
-|               25               |        112. Path Sum                                    |          Accepted          |
-|               26               |        118.PascalTriangle                               |          Accepted          |
-|               27               |        119.PascalTriangleII                             |          Accepted          |
-|               28               |        121.BestTimeBuySellStock                         |          Accepted          |
-|               29               |        125.ValidPalindrome                              |          Accepted          |
-|               30               |          136. Single Number                             |          Accepted          |
-|               31               |          141.LinkedListCycle                            |          Accepted          |
-|               32               |         144.BinaryTreePreorderTraversal                 |          Accepted          |
-|               33               |         145.BinaryTreePostorderTraversal                |          Accepted          |
-|               34               |         160.IntersectionTwoLinkedLists                  |          Accepted          |
-|               35               |         168. Excel Sheet Column Title                   |          Accepted          |
-|               36               |         169.MajorityElement                             |          Accepted          |
-|               37               |         171.ExcelSheetColumnNumber                      |          Accepted          |
-|               38               |         190.ReverseBits                                 |          Accepted          |
-|               39               |         191.Number1Bits                                 |          Accepted          |
-|               40               |         203.RemoveLinkedListElements                    |          Accepted          |
+<h1 align="center">Модуль задач с   
+    <a href='https://leetcode.com/'>LeetCode</a>
+    <img src="../info/img/leetcode.svg" height="32" width="32"/>
+    <img src="../info/img/python.svg" height="32" width="32"/> 
+</h1>
 
+<h1 align="center">Сложность Easy</h1>
 
+<img src="../info/img/tasks-list.png" height="100%" width="100%"/> 
+
+<p>
+В git не получается сохранить порядок задач как в системе <br>
+Поэтому задачи сгруппированы по 50 и разделены на страницы </p>
+
+<img src="../info/img/all-pages.png" height="100%" width="100%"/> 
 

@@ -1,5 +1,5 @@
 <h1 align="center">Ссылка на задачу
-    <a href='https://leetcode.com/problems/move-zeroes/'>
+    <a href='https://leetcode.com/problems/move-zeroes/ '>
   283. Move Zeroes
     </a>
 </h1>   
