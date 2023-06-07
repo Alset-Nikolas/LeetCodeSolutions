@@ -12,12 +12,10 @@ class Solution:
     def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
         q1 = self.get_freq_items(nums1)
         q2 = self.get_freq_items(nums2)
-        print(q1, q2)
         res = []
         for k, v in q1.items():
             if k in q2:
                 res += [k]*min(q1[k], q2[k])
-        print(res)
         return res
 if __name__ == "__main__":
     s = Solution()
