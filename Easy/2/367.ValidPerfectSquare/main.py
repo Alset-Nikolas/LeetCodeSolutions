@@ -6,7 +6,6 @@ class Solution:
         r = num+1
         while l < r:
             m = (l+r)//2
-            print(m)
             if m*m == num:
                 return True
             elif m*m < num:
