@@ -13,7 +13,7 @@ class Solution:
             m = (l+r)//2
             if guess(m) == 0:
                 return m
-            if guess(m) > 0:
+            if guess(m) < 0:
                 r = m 
             else:
                 l = m + 1
