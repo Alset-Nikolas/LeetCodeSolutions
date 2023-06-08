@@ -6,7 +6,8 @@ class Solution:
             
             if x not in q:
                 q[x] =0
-            while j < len(s) and s[j] in q and s[j] <= 1:
-                j += 1
             q[x] += 1
-            
+            while j < len(s) and s[j] in q and q[s[j]] > 1:
+                j += 1
+        return j if j< len(s) else -1
+                
