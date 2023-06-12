@@ -41,7 +41,7 @@ class Solution:
         for i, x in enumerate(nums1):
             if x in info:
                 res[i] = info[x]
-        print(res)
+        return res
         
 print(Solution().nextGreaterElement([2,4],[1,2,3,4]))
         
