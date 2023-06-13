@@ -12,4 +12,3 @@ class Solution:
 
         return ''.join(s_list)
 print(Solution().reverseStr('abcdefg', 8))
-'bacdfeg'
