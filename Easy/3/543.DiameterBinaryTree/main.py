@@ -8,17 +8,15 @@ class TreeNode:
 class Solution:
     def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
         
-        def dfs(node, h=0, ans=None):
-            if ans is None:
-                ans = []
-            
+        def dfs(node: Optional[TreeNode], h=0, ans=None):
             if not node:
                 ans.append(0)
-                return h
-            hl = dfs(node.left, h+1)
-            hr = dfs(node.right, h+1)
-            ans.append(hl+hr-h)
-            return h + 1
+                return 0
+            hl = dfs(node.left, h+1,ans)
+            hr = dfs(node.right, h+1,ans)
+            mass.append(hl +hr)
+            return max(hl, hr) + 1
         mass = []
         dfs(root, ans=mass)
+        print(mass)
         return max(mass)
