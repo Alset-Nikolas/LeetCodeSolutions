@@ -8,4 +8,11 @@ class Node:
 
 class Solution:
     def postorder(self, root: 'Node') -> List[int]:
-        pass
+        mass = []
+        def dfs(node, mass:List):
+            if not node:
+                return
+            [dfs(x, mass) for x in node.children]
+            mass.append(node.val)
+        dfs(root, mass)
+        return mass
