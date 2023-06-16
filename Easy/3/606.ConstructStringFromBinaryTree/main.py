@@ -46,6 +46,9 @@ class Solution:
                 stack.add('(')
                 dfs(node.left, stack)
                 stack.add(')')
+            elif node.right:
+                stack.add_ignore('()')
+
             if node.right:
                 stack.add('(')
                 dfs(node.right, stack)
