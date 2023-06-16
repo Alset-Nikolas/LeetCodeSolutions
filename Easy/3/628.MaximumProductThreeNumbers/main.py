@@ -8,4 +8,4 @@ class Solution:
             for x in mass:
                 res *= x
             return res
-        return max(sum(nums[:3]), sum(nums[-3:]))
+        return max(calc_num_list(nums[:3]), calc_num_list(nums[-3:]))
