@@ -8,17 +8,21 @@ class TreeNode:
         self.right = right
 class Solution:
     def findTarget(self, root: Optional[TreeNode], k: int) -> bool:
-        items = set()
+        items = dict()
         def dfs(node, items):
             if not node:
                 return
-            items.add(node.val)
+            if node.val not in items:
+                items[node.val] = 0
+            items[node.val] += 1
             dfs(node.left, items)
             dfs(node.right, items)
         dfs(root, items)
 
-        for x in items:
+        for x, q in items.items():
             y = k - x
-            if y in items:
+            if x == y and q > 1:
+                return True
+            if x != y and y in items:
                 return True
         return False
