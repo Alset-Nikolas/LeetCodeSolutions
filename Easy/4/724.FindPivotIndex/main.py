@@ -10,3 +10,4 @@ class Solution:
             sum_r -= x
             if sum_l == sum_r:
                 return i 
+        return -1
