@@ -1,29 +1,30 @@
+from typing import * 
+
 class Solution:
-    def buddyStrings(self, s: str, goal: str) -> bool:
-        if len(s) != len(goal):
-            return False
-        info_err = dict()
-        info = dict()
-        errs = 0
-        flag = False
-        for i in range(len(s)):
-            x,y = s[i], goal[i]
-            if x != y:
-                errs += 1
-                
-                if errs > 2:
+    def lemonadeChange(self, bills: List[int]) -> bool:
+        bank = dict()
+        for x in bills:
+            if x == 5:
+                if x not in bank:
+                    bank[5] = 0
+                bank[5] += 1
+            elif x == 10:
+                if 5 not in bank or bank[5] <= 0:
                     return False
-                elif errs == 2 and  (x not in info_err or info_err[x] !=  y):
+                bank[5] -= 1
+                if 10 not in bank:
+                    bank[10] = 0
+                bank[10] += 1
+            else:
+                if 5 not in bank:
                     return False
-                info_err[y] = x
-            if x not in info:
-                info[x] = 0
-            info[x] += 1
-            if info[x] > 1:
-                flag = True
-        if errs == 1:
-            return False
-        
-        return True if errs == 2 else flag
-        
-                
+                if 10 not in bank or bank[10]<=0:
+                    if bank[5] < 3:
+                        return False
+                    bank[5] -= 3
+                    continue
+                if bank[5] <= 0:
+                    return False
+                bank[5] -= 1
+                bank[10] -= 1
+        return True                
