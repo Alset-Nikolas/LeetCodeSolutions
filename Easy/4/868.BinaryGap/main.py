@@ -1,9 +1,17 @@
 from typing import * 
 class Solution:
-    def transpose(self, matrix: List[List[int]]) -> List[List[int]]:
-        n,m = len(matrix), len(matrix[0])
-        matr = [[0 for x in range(n)] for y in range(m)]
-        for i in range(n):
-            for j in range(m):
-                matr[j][i] = matrix[i][j]
-        return matr
+    def binaryGap(self, n: int) -> int:
+        mass = []
+        while n > 0:
+            mass.append(n%2)
+            n //= 2
+        l = None
+        ans = 0
+        for r in range(len(mass)):
+            if mass[r] == 1:
+                if l is None:
+                    l = r
+                    continue
+                ans = max(ans, r-l)
+                l=r
+        return ans

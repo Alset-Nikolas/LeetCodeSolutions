@@ -1,9 +1,23 @@
 from typing import * 
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
 class Solution:
-    def transpose(self, matrix: List[List[int]]) -> List[List[int]]:
-        n,m = len(matrix), len(matrix[0])
-        matr = [[0 for x in range(n)] for y in range(m)]
-        for i in range(n):
-            for j in range(m):
-                matr[j][i] = matrix[i][j]
-        return matr
+    def leafSimilar(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> bool:
+        def get_mass(root: Optional[TreeNode], mass):
+            if not root:
+                return 
+            if not root.left  and not root.right:
+                mass.append(root.val)
+                return
+            get_mass(root.left, mass)
+            get_mass(root.right, mass)
+        mass1 = []
+        mass2 = []
+        get_mass(root1, mass1)
+        get_mass(root2, mass2)
+        return mass1 == mass2
+
+            
