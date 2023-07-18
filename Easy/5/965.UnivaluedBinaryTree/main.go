@@ -22,9 +22,3 @@ func dfs(node *TreeNode, val int) bool {
 func isUnivalTree(root *TreeNode) bool {
 	return dfs(root, root.Val)
 }
-
-// func main() {
-// 	var s = []int{1, 2, 3, 3}
-// 	fmt.Println(s)
-// 	fmt.Println(isUnivalTree(s))
-// }
