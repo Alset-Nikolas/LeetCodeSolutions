@@ -7,25 +7,20 @@ class MyQueue:
     def push(self, x: int) -> None:
         self.mass1.append(x)
 
-
     def pop(self) -> int:
         if self.mass2 == []:
-            while len(self.mass1) >0:
+            while len(self.mass1) > 0:
                 self.mass2.append(self.mass1.pop())
         return self.mass2.pop()
 
-        
-
     def peek(self) -> int:
         if self.mass2 == []:
-            while len(self.mass1) >0:
+            while len(self.mass1) > 0:
                 self.mass2.append(self.mass1.pop())
         return self.mass2[-1]
-        
 
     def empty(self) -> bool:
         return self.mass1 == [] and self.mass2 == []
-
 
 # Your MyQueue object will be instantiated and called as such:
 # obj = MyQueue()

@@ -10,10 +10,10 @@ class Solution(object):
                 res.append([1])
                 continue
             last_row = res[-1]
-            item = [1 for x in range(len(last_row)+1)]
-            for j in range(1, len(item)-1):
-                x1 = last_row[j-1]
+            item = [1 for x in range(len(last_row) + 1)]
+            for j in range(1, len(item) - 1):
+                x1 = last_row[j - 1]
                 x2 = last_row[j]
-                item[j] = x1+x2
+                item[j] = x1 + x2
             res.append(item)
         return res

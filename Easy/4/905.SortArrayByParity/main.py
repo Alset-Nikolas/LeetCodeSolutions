@@ -1,4 +1,5 @@
-from typing import * 
+from typing import *
+
 
 class Solution:
     def sortArrayByParity(self, nums: List[int]) -> List[int]:

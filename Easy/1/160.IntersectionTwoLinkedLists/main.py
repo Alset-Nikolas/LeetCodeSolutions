@@ -20,4 +20,4 @@ class Solution(object):
             if node in items:
                 return node
             node = node.next
-        return 
+        return

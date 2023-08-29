@@ -1,4 +1,6 @@
-from typing import * 
+from typing import *
+
+
 class Mystack:
     def __init__(self) -> None:
         self.mass = []
@@ -16,12 +18,11 @@ class Mystack:
 
     def is_empty(self):
         return self.mass == []
-    
+
     def pop(self):
         return self.mass.pop()
 
 
-    
 class Solution:
     def nextGreaterElement(self, nums1: List[int], nums2: List[int]) -> List[int]:
         ans = [-1] * len(nums2)
@@ -30,18 +31,18 @@ class Solution:
         for i, x in enumerate(nums2[::-1]):
             my_stack.add(x)
             info[x] = -1
-            if i ==0:
+            if i == 0:
                 continue
             for v in my_stack.mass[::-1]:
                 if x < v:
-                    ans[-i-1] = v
+                    ans[-i - 1] = v
                     info[x] = v
                     break
-        res = [-1]*len(nums1)
+        res = [-1] * len(nums1)
         for i, x in enumerate(nums1):
             if x in info:
                 res[i] = info[x]
         return res
-        
-print(Solution().nextGreaterElement([2,4],[1,2,3,4]))
-        
+
+
+print(Solution().nextGreaterElement([2, 4], [1, 2, 3, 4]))

@@ -16,4 +16,3 @@ class Solution(object):
         if not (p and q):
             return True
         return p.val == q.val and self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
-

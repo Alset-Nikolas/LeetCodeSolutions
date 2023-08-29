@@ -5,12 +5,12 @@ class Solution(object):
         :type val: int
         :rtype: int
         """
-        i =0
-        k =0
+        i = 0
+        k = 0
         while i < len(nums):
             x = nums[i]
             if x != val:
-                nums[i], nums[k] = nums[k], nums[i] 
+                nums[i], nums[k] = nums[k], nums[i]
                 k += 1
             i += 1
         return k
@@ -18,6 +18,6 @@ class Solution(object):
 
 if __name__ == "__main__":
     s = Solution()
-  
-    assert s.removeElement([3,2,2,3], 3) == 2
-    assert s.removeElement([0,1,2,2,3,0,4,2], 2 ) == 5
+
+    assert s.removeElement([3, 2, 2, 3], 3) == 2
+    assert s.removeElement([0, 1, 2, 2, 3, 0, 4, 2], 2) == 5

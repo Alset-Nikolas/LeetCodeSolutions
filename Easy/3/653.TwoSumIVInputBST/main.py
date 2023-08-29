@@ -1,4 +1,5 @@
-from typing import * 
+from typing import *
+
 
 # Definition for a binary tree node.
 class TreeNode:
@@ -6,9 +7,12 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
+
+
 class Solution:
     def findTarget(self, root: Optional[TreeNode], k: int) -> bool:
         items = dict()
+
         def dfs(node, items):
             if not node:
                 return
@@ -17,6 +21,7 @@ class Solution:
             items[node.val] += 1
             dfs(node.left, items)
             dfs(node.right, items)
+
         dfs(root, items)
 
         for x, q in items.items():

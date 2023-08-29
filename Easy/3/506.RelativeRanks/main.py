@@ -1,11 +1,12 @@
-from typing import * 
+from typing import *
+
 
 class Solution:
     def findRelativeRanks(self, score: List[int]) -> List[str]:
         mass = sorted(score)
-        res =[]
+        res = []
         info = {
-            x:i+1 for i,x in enumerate(mass[::-1])
+            x: i + 1 for i, x in enumerate(mass[::-1])
         }
         for p in score:
             number = info.get(p)

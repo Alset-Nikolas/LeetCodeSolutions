@@ -1,11 +1,8 @@
-from typing import *
-
 class MyHashSet:
 
     def __init__(self):
         self.N = 999
         self.mass = [[] for x in range(self.N)]
-        
 
     def add(self, key: int) -> None:
         index = key % self.N
@@ -15,14 +12,12 @@ class MyHashSet:
         self.mass[index].append(key)
         print(self.mass)
 
-
     def remove(self, key: int) -> None:
         index = key % self.N
         for i, x in enumerate(self.mass[index]):
             if x == key:
                 self.mass[index].pop(i)
-                return 
-        
+                return
 
     def contains(self, key: int) -> bool:
         index = key % self.N

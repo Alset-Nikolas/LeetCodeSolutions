@@ -1,4 +1,5 @@
-from typing import * 
+from typing import *
+
 
 # Definition for a binary tree node.
 class Solution:
@@ -11,12 +12,9 @@ class Solution:
         rwin = 1
         nums.append(-1)
         for r in range(1, len(nums)):
-            if nums[r-1] >= nums[r]:
-                if r-l > rwin - lwin:
-                    lwin=l
+            if nums[r - 1] >= nums[r]:
+                if r - l > rwin - lwin:
+                    lwin = l
                     rwin = r
-                l=r
+                l = r
         return rwin - lwin
-
-
-            

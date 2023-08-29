@@ -11,23 +11,22 @@ class Solution(object):
         len_ = (max(n, m) + 1)
         flag = False
         for i in range(len(res)):
-            x1 = 0 if i >= n else int(a[n-i-1])
-            x2 = 0 if i >= m else int(b[m-i-1])
+            x1 = 0 if i >= n else int(a[n - i - 1])
+            x2 = 0 if i >= m else int(b[m - i - 1])
             sum_ = x1 + x2 + int(flag)
             if sum_ <= 1:
-                res[len_-i-1] = str(sum_)
+                res[len_ - i - 1] = str(sum_)
                 flag = False
             elif sum_ == 2:
                 flag = True
             else:
-                res[len_-i-1] = "1"
+                res[len_ - i - 1] = "1"
                 flag = True
 
-        return "".join(res) if res[0] !="0" else "".join(res[1:])
+        return "".join(res) if res[0] != "0" else "".join(res[1:])
 
 
 if __name__ == "__main__":
     s = Solution()
     assert s.addBinary("11", "1") == "100"
     assert s.addBinary("1010", "1011") == "10101"
-

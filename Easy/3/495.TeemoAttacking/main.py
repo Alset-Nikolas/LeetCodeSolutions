@@ -1,4 +1,6 @@
-from typing import * 
+from typing import *
+
+
 class Solution:
     def findPoisonedDuration(self, timeSeries: List[int], duration: int) -> int:
         if not timeSeries:
@@ -17,8 +19,5 @@ class Solution:
                 res += delta
             r_last = li + duration
 
-
-
         res += duration
         return res
-            

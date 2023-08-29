@@ -12,7 +12,7 @@ class Solution(object):
         """
         if not root:
             return 0
-        l =0
+        l = 0
         r = 0
         if root.left:
             l = self.maxDepth(root.left) + 1

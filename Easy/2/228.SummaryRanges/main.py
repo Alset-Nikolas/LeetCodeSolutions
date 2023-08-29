@@ -1,5 +1,6 @@
 from typing import *
 
+
 class Solution:
     def summaryRanges(self, nums: List[int]) -> List[str]:
         if nums == []:
@@ -8,7 +9,7 @@ class Solution:
         r = None
         res = []
         for i in range(1, len(nums)):
-            if nums[i] == nums[i-1] + 1:
+            if nums[i] == nums[i - 1] + 1:
                 r = nums[i]
             else:
                 if r is None:
@@ -23,6 +24,3 @@ class Solution:
             res.append(str(l))
 
         return res
-
-
-

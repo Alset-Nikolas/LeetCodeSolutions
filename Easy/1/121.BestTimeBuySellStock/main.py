@@ -29,7 +29,7 @@ class StackMaxMin:
 
     def get_max(self):
         return self.mass_max[-1]
-    
+
     def get_min(self):
         return self.mass_min[-1]
 
@@ -42,11 +42,11 @@ class FirstSolution(object):
         """
         stack_min = StackMaxMin()
         stack_max = StackMaxMin()
-        for i in range(len(prices)-1, -1, -1):
+        for i in range(len(prices) - 1, -1, -1):
             x = prices[i]
             stack_max.add(x)
-        res = 0     
-        for i in range(len(prices)-1):
+        res = 0
+        for i in range(len(prices) - 1):
             x = prices[i]
             stack_max.pop()
             stack_min.add(x)
@@ -54,8 +54,9 @@ class FirstSolution(object):
             max_ = stack_max.get_max()
             print(i, stack_max.mass_max)
             res = max(res, max_ - min_)
-        return max(res,0)
-    
+        return max(res, 0)
+
+
 class Solution(object):
     def maxProfit(self, prices):
         """
@@ -80,4 +81,4 @@ class Solution(object):
 
 if __name__ == "__main__":
     s = Solution()
-    print(s.maxProfit([7,1,5,3,6,4]))
+    print(s.maxProfit([7, 1, 5, 3, 6, 4]))

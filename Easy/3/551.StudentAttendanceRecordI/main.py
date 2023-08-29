@@ -4,7 +4,7 @@ class Solution:
         l = 0
         for x in s:
             if x == 'A':
-                l=0
+                l = 0
                 a += 1
                 if a >= 2:
                     return False

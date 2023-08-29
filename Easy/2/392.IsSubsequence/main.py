@@ -3,7 +3,7 @@ class Solution:
         i = 0
         j = 0
         while i < len(s) and j < len(t):
-            while j<len(t) and s[i] != t[j]:
+            while j < len(t) and s[i] != t[j]:
                 j += 1
             if j == len(t):
                 break

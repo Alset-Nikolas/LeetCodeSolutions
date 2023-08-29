@@ -4,6 +4,7 @@ class ListNode(object):
         self.val = x
         self.next = None
 
+
 class Solution(object):
     def hasCycle(self, head):
         """
@@ -27,7 +28,7 @@ if __name__ == "__main__":
     nodes = []
     for x in values:
         node = ListNode(x=3)
-        if len(nodes)>0:
+        if len(nodes) > 0:
             last_node = nodes[-1]
             last_node.next = node
         nodes.append(node)

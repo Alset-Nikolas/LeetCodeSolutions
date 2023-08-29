@@ -10,10 +10,11 @@ class Solution(object):
         :type root: TreeNode
         :rtype: bool
         """
+
         def get_h_node(node):
             if not node:
                 return 0
-            
+
             l = 0
             r = 0
             if node.left:
@@ -21,6 +22,8 @@ class Solution(object):
             if node.right:
                 r = get_h_node(node.right) + 1
             return max(1, max(l, r))
+
         if not root:
             return True
-        return abs(get_h_node(root.left) - get_h_node(root.right)) <= 1 and self.isBalanced(root.left) and self.isBalanced(root.right) 
+        return abs(get_h_node(root.left) - get_h_node(root.right)) <= 1 and self.isBalanced(
+            root.left) and self.isBalanced(root.right)

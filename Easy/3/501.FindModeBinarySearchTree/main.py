@@ -1,10 +1,14 @@
-from typing import * 
+from typing import *
+
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
+
+
 class Solution:
     def findMode(self, root: Optional[TreeNode]) -> List[int]:
         def dfs(root: Optional[TreeNode], info=None):
@@ -17,6 +21,7 @@ class Solution:
             info = dfs(root.left, info)
             info = dfs(root.right, info)
             return info
+
         info = dfs(root)
         res = []
         max_q = 0
@@ -27,4 +32,3 @@ class Solution:
                 res = [k]
                 max_q = v
         return res
-

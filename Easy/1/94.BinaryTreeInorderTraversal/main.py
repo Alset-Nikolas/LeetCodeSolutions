@@ -14,4 +14,4 @@ class Solution(object):
                 left_ch = self.inorderTraversal(node.left)
             if node.right:
                 right_ch = self.inorderTraversal(node.right)
-        return left_ch + val_items  + right_ch
+        return left_ch + val_items + right_ch

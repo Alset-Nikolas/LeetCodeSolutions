@@ -1,4 +1,5 @@
-from collections import deque  
+from collections import deque
+
 
 class Solution(object):
     combination = {
@@ -6,14 +7,15 @@ class Solution(object):
         "[": "]",
         "{": "}",
     }
+
     def isValid(self, s):
-        stack = deque()  
+        stack = deque()
         """
         :type s: str
         :rtype: bool
         """
         for symvol in s:
-            if len(stack) ==0:
+            if len(stack) == 0:
                 if symvol not in self.combination.keys():
                     return False
                 stack.append(symvol)

@@ -1,5 +1,3 @@
-from typing import * 
-
 # Definition for a binary tree node.
 class Solution:
     def judgeCircle(self, moves: str) -> bool:
@@ -14,5 +12,4 @@ class Solution:
                 x2 -= 1
             elif x == 'R':
                 x2 += 1
-        return x2==0 and y2 == 0
-        
+        return x2 == 0 and y2 == 0

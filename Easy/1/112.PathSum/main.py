@@ -18,8 +18,7 @@ class Solution(object):
         flag_l = False
         flag_r = False
         if root.left:
-            flag_l = self.hasPathSum(root.left, targetSum-root.val)
+            flag_l = self.hasPathSum(root.left, targetSum - root.val)
         if root.right:
-            flag_r = self.hasPathSum(root.right, targetSum-root.val)
+            flag_r = self.hasPathSum(root.right, targetSum - root.val)
         return flag_l or flag_r
-            

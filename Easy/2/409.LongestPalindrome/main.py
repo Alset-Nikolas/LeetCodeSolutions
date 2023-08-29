@@ -8,7 +8,7 @@ class Solution:
         res = 0
         flag = False
         for k, v in items.items():
-            if v % 2 ==0:
+            if v % 2 == 0:
                 res += v
             else:
                 flag = True

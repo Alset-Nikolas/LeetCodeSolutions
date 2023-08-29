@@ -7,8 +7,8 @@ class Solution:
         num = abs(num)
         while num != 0:
             res = str(num % 7) + res
-            num =num//7
+            num = num // 7
         if flag:
-            res = '-'+res
-        
+            res = '-' + res
+
         return res

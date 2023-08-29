@@ -1,11 +1,12 @@
-from typing import * 
+from typing import *
+
 
 class Solution:
     def findRestaurant(self, list1: List[str], list2: List[str]) -> List[str]:
         d1 = dict()
         d2 = dict()
         min_val = len(list1) + len(list2)
-        for list_, d in zip([list1, list2], [d1,d2]):
+        for list_, d in zip([list1, list2], [d1, d2]):
             for i, x in enumerate(list_):
                 if x in d:
                     continue
@@ -18,4 +19,3 @@ class Solution:
                 if d1[k] + d2[k] == min_val:
                     res.append(k)
         return res
-        

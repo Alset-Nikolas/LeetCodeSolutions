@@ -3,8 +3,10 @@ class ListNode(object):
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
     def __str__(self) -> str:
         return str(self.val)
+
     @classmethod
     def get_head_list(cls, mass):
         node_head = None
@@ -16,8 +18,9 @@ class ListNode(object):
             else:
                 last_node.next = node
             last_node = node
-            
+
         return node_head
+
     @classmethod
     def check_2_listnode(cls, ls1, ls2):
         while ls1 and ls2:
@@ -26,6 +29,8 @@ class ListNode(object):
             ls1 = ls1.next
             ls2 = ls2.next
         return ls1 is None and ls2 is None
+
+
 class Solution(object):
     def mergeTwoLists(self, list1, list2):
         """
@@ -41,7 +46,7 @@ class Solution(object):
                 if node_head is None:
                     node_head = node
                 else:
-                    last_node.next  = node
+                    last_node.next = node
                 list1 = list1.next
                 last_node = node
 
@@ -50,7 +55,7 @@ class Solution(object):
                 if node_head is None:
                     node_head = node
                 else:
-                    last_node.next  =  node
+                    last_node.next = node
                 list2 = list2.next
                 last_node = node
         for list in [list1, list2]:
@@ -59,16 +64,17 @@ class Solution(object):
                 if node_head is None:
                     node_head = node
                 else:
-                    last_node.next  = node
+                    last_node.next = node
                 list = list.next
                 last_node = node
         return node_head
 
 
-
 if __name__ == "__main__":
     s = Solution()
-  
-    assert ListNode.check_2_listnode(s.mergeTwoLists(ListNode.get_head_list([1,2,4]), ListNode.get_head_list([1, 3, 4])), ListNode.get_head_list([1,1,2,3,4,4]) )
+
+    assert ListNode.check_2_listnode(
+        s.mergeTwoLists(ListNode.get_head_list([1, 2, 4]), ListNode.get_head_list([1, 3, 4])),
+        ListNode.get_head_list([1, 1, 2, 3, 4, 4]))
     assert s.mergeTwoLists(None, None) == None
     assert not s.mergeTwoLists(None, ListNode(0)) == ListNode(0)

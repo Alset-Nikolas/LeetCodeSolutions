@@ -1,8 +1,9 @@
-from typing import * 
+from typing import *
+
 
 class Solution:
     def findErrorNums(self, nums: List[int]) -> List[int]:
-        nums_real = set(range(1, len(nums)+1))
+        nums_real = set(range(1, len(nums) + 1))
         find_x = None
         for x in nums:
             if x in nums_real:

@@ -1,5 +1,6 @@
-from typing import * 
 import heapq
+from typing import *
+
 
 class Solution:
     def dominantIndex(self, nums: List[int]) -> int:
@@ -10,10 +11,12 @@ class Solution:
             heapq.heappush(heap, [x, i])
             if len(heap) > 2:
                 heapq.heappop(heap)
-            
+
         if len(heap) != 2:
             return -1
         max_element = heap[1][0]
-        mex_index = heap[1][1] 
-        return mex_index if max_element >= heap[0][0]*2 else -1 
-print(Solution().dominantIndex([1,2,3,4]))
+        mex_index = heap[1][1]
+        return mex_index if max_element >= heap[0][0] * 2 else -1
+
+
+print(Solution().dominantIndex([1, 2, 3, 4]))

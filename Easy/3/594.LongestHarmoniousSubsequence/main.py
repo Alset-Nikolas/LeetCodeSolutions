@@ -1,4 +1,6 @@
-from typing import * 
+from typing import *
+
+
 # Definition for a Node.
 
 
@@ -12,11 +14,7 @@ class Solution:
             info[x] += 1
         for k, v in info.items():
             if k + 1 in info:
-                res = max(res, v*info[k+1])
-            elif k - 1  in info:
-                res = max(res, v*info[k-1])
+                res = max(res, v * info[k + 1])
+            elif k - 1 in info:
+                res = max(res, v * info[k - 1])
         return res
-            
-
-
-

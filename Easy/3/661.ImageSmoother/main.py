@@ -1,4 +1,5 @@
-from typing import * 
+from typing import *
+
 
 # Definition for a binary tree node.
 class Solution:
@@ -14,19 +15,21 @@ class Solution:
                 for y in range(y_min, y_max):
                     sum_ += img[y][x]
                     q += 1
-            return int(sum_ / q) if q != 0 else 0 
-        mass  = []
+            return int(sum_ / q) if q != 0 else 0
+
+        mass = []
         for y in range(len(img)):
             new_line = []
             for x in range(len(img[0])):
                 new_line.append(calc(x, y, img))
             mass.append(new_line)
         return mass
-    
+
+
 print(Solution().imageSmoother([
-    [2,3,4],
-    [5,6,7],
-    [8,9,10],
-    [11,12,13],
-    [14,15,16]
+    [2, 3, 4],
+    [5, 6, 7],
+    [8, 9, 10],
+    [11, 12, 13],
+    [14, 15, 16]
 ]))

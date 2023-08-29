@@ -1,4 +1,6 @@
-from typing import * 
+from typing import *
+
+
 # Definition for a Node.
 class Node:
     def __init__(self, val=None, children=None):
@@ -9,10 +11,12 @@ class Node:
 class Solution:
     def postorder(self, root: 'Node') -> List[int]:
         mass = []
-        def dfs(node, mass:List):
+
+        def dfs(node, mass: List):
             if not node:
                 return
             [dfs(x, mass) for x in node.children]
             mass.append(node.val)
+
         dfs(root, mass)
         return mass

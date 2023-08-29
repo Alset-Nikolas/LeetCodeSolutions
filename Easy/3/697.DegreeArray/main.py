@@ -1,9 +1,9 @@
-from typing import * 
+from typing import *
+
 
 class Solution:
     def findShortestSubArray(self, nums: List[int]) -> int:
-        
-        
+
         info = dict()
         num_inds = dict()
         for i, x in enumerate(nums):
@@ -27,6 +27,6 @@ class Solution:
                     res_k.append(k)
         res = len(nums)
         for item in res_k:
-            res = min(res, num_inds[item]['end']-num_inds[item]['start']+1)
-        
+            res = min(res, num_inds[item]['end'] - num_inds[item]['start'] + 1)
+
         return res

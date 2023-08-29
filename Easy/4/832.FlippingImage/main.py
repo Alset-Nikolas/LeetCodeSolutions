@@ -1,6 +1,5 @@
-from typing import * 
-import string
-import math
+from typing import *
+
 
 class Solution:
     def flipAndInvertImage(self, image: List[List[int]]) -> List[List[int]]:
@@ -12,4 +11,3 @@ class Solution:
                 image[j][i] = int(not bool(image[j][i]))
             image[j] = image[j][::-1]
         return image
-    

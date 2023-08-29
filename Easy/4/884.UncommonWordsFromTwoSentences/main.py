@@ -1,4 +1,6 @@
-from typing import * 
+from typing import *
+
+
 class Solution:
     def uncommonFromSentences(self, s1: str, s2: str) -> List[str]:
         s1_info = dict()
@@ -16,4 +18,3 @@ class Solution:
             if w in s1_info and s1_info[w] == 1 or w in s2_info and s2_info[w] == 1:
                 res.append(w)
         return res
-        

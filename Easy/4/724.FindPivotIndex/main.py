@@ -1,4 +1,5 @@
-from typing import * 
+from typing import *
+
 
 class Solution:
     def pivotIndex(self, nums: List[int]) -> int:
@@ -9,5 +10,5 @@ class Solution:
             sum_l += x
             sum_r -= x
             if sum_l == sum_r:
-                return i 
+                return i
         return -1

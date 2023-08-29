@@ -10,9 +10,9 @@ class Solution:
             if s_i not in info:
                 info[s_i] = t_i
             if info[s_i] != t_i:
-                return False        
+                return False
         return len(set(s)) == len(set(t))
-        
+
 
 if __name__ == "__main__":
     s = Solution()

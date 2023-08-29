@@ -4,7 +4,7 @@ class Solution:
         while True:
             n_next = 0
             for x in str(n):
-                n_next += int(x)*int(x)
+                n_next += int(x) * int(x)
             if n_next not in numbers:
                 numbers.add(n_next)
             else:

@@ -3,6 +3,8 @@ class ListNode(object):
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
+
 class Solution(object):
     def deleteDuplicates(self, head):
         """
@@ -17,19 +19,16 @@ class Solution(object):
                 last_node = head
                 continue
             if node.val == last_node.val:
-                last_node.next= None
+                last_node.next = None
             else:
-                last_node.next=node
+                last_node.next = node
                 last_node = node
             node = node.next
 
         return head
 
 
-
-
 if __name__ == "__main__":
     s = Solution()
     assert s.climbStairs(2) == 2
     assert s.climbStairs(3) == 3
-

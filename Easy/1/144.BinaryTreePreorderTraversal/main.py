@@ -23,6 +23,3 @@ class Solution(object):
             if node.left:
                 nodes.append(node.left)
         return res
-            
-            
-

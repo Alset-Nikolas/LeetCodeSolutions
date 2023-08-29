@@ -7,13 +7,13 @@ class Solution:
         errs = 0
         flag = False
         for i in range(len(s)):
-            x,y = s[i], goal[i]
+            x, y = s[i], goal[i]
             if x != y:
                 errs += 1
-                
+
                 if errs > 2:
                     return False
-                elif errs == 2 and  (x not in info_err or info_err[x] !=  y):
+                elif errs == 2 and (x not in info_err or info_err[x] != y):
                     return False
                 info_err[y] = x
             if x not in info:
@@ -23,7 +23,5 @@ class Solution:
                 flag = True
         if errs == 1:
             return False
-        
+
         return True if errs == 2 else flag
-        
-                

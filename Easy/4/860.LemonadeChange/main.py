@@ -1,4 +1,5 @@
-from typing import * 
+from typing import *
+
 
 class Solution:
     def lemonadeChange(self, bills: List[int]) -> bool:
@@ -18,7 +19,7 @@ class Solution:
             else:
                 if 5 not in bank:
                     return False
-                if 10 not in bank or bank[10]<=0:
+                if 10 not in bank or bank[10] <= 0:
                     if bank[5] < 3:
                         return False
                     bank[5] -= 3
@@ -27,4 +28,4 @@ class Solution:
                     return False
                 bank[5] -= 1
                 bank[10] -= 1
-        return True                
+        return True

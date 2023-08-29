@@ -1,4 +1,6 @@
-from typing import * 
+from typing import *
+
+
 class Solution:
     def findWords(self, words: List[str]) -> List[str]:
         f1 = {x.lower() for x in 'qwertyuiop'}

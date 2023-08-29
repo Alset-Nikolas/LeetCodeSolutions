@@ -1,4 +1,5 @@
-from typing import * 
+from typing import *
+
 
 # Definition for a binary tree node.
 class TreeNode:
@@ -7,38 +8,39 @@ class TreeNode:
         self.left = left
         self.right = right
 
+
 class Stack:
     def __init__(self):
         self.mass = []
 
     def is_empty(self):
         return self.mass == []
-    
-    def add(self, x:str):
+
+    def add(self, x: str):
         if self.is_empty():
             self.mass.append(x)
             return
-        if x == ')' and self.show() == '(' :
+        if x == ')' and self.show() == '(':
             self.pop()
             return
         self.mass.append(x)
-    
+
     def add_ignore(self, x):
         self.mass.append(x)
-    
+
     def show(self):
         return self.mass[-1]
-    
+
     def pop(self):
         return self.mass.pop()
-    
+
     def ans(self):
         return ''.join(self.mass)
 
-        
+
 class Solution:
     def tree2str(self, root: Optional[TreeNode]) -> str:
-        def dfs(node:Optional[TreeNode], stack:Stack):
+        def dfs(node: Optional[TreeNode], stack: Stack):
             if not node:
                 return
             stack.add(str(node.val))
@@ -57,4 +59,3 @@ class Solution:
         stack = Stack()
         dfs(root, stack)
         return stack.ans()
-
