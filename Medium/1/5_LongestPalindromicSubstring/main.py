@@ -1,28 +1,23 @@
-from pprint import pprint
-
-
+from collections import deque
 class Solution:
-	def longestPalindrome(self, s: str) -> str:
-		N = len(s) + 2
-		F = [[0 for xi in range(N)] for j in range(N)]
-		max_palin = ''
+	def convert(self, s: str, numRows: int) -> str:
+		l = 0
+		flag_up = True
+		deques = [deque() for _ in range(numRows)]
+		for i, si in enumerate(s):
+			deques[l].append(si)
+			if numRows > 1:
+				if l == 0:
+					flag_up = True
+				if l == numRows - 1:
+					flag_up = False
+				l += bool(flag_up) if flag_up else -1
 
-		for k in range(1, N - 1):
-			j = 1
-			for i in range(k, N - 1):
-				if j == i:
-					F[j][i] = 1
-				else:
-					if i - j > 1:
-						F[j][i] = int(s[i - 1] == s[j - 1] and F[j + 1][i - 1])
-					else:
-						F[j][i] = int(s[i - 1] == s[j - 1])
-				if F[j][i] and len(s[j-1: i]) >= len(max_palin) :
-					max_palin = s[j-1: i]
-
-				j = (j + 1) % (N - 1)
-
-		return max_palin
+		res = []
+		for deq in deques:
+			while len(deq) > 0:
+				res.append(deq.popleft())
+		return ''.join(res)
 
 
-print(Solution().longestPalindrome("aacabdkacaa"))
+print(Solution().convert(s='PAYPALISHIRING', numRows=3))
