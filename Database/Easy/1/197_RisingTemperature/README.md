@@ -1,7 +1,7 @@
 <h1 align="center">Ссылка на задачу
-    <a href='https://leetcode.com/problems/delete-duplicate-emails/description/
+    <a href='https://leetcode.com/problems/rising-temperature/
 '>
-  196. Delete Duplicate Emails
+  197. Rising Temperature
     </a>
 </h1>   
 <img src="./info/task.png" height="100%" width="100%"/>
